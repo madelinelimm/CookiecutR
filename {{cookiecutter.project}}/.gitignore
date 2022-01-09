@@ -4,3 +4,5 @@
 .Ruserdata
 
 {{cookiecutter.project}}.Rproj
+
+data/*
