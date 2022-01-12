@@ -12,6 +12,7 @@
 
 # other suggested packages to download
 
+# https://rstudio.github.io/renv/reference/snapshot.html
 # can run the command renv::settings$snapshot.type("all") to capture all the
 # packages but my result in undesired packages entering lockfile. 
 # currently snapshot type is implicit, which means only packages used in project
