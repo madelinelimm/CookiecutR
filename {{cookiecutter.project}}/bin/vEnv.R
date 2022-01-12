@@ -2,25 +2,36 @@
 # to activate environment and install packages
 
 
-# check if current packages is the same as those in renv.lock
-# else install the packages
+# packages already installed
+
+# renv::install('rjson')
+# renv::install('collections')
+
+
+
+
+# other suggested packages to download
+
+# can run the command renv::settings$snapshot.type("all") to capture all the
+# packages but my result in undesired packages entering lockfile. 
+# currently snapshot type is implicit, which means only packages used in project
+# is in the lockfile
+
 renv::install('shiny')
-renv::install('tidyverse')
-renv::install('knitr')
-renv::install('dplyr')
 renv::install('rmake')
-renv::install('rjson')
-renv::install('collections')
 renv::install('sqldf')
-renv::install('ggplot2')
 renv::install('esquisse')
 renv::install('caret')
 renv::install('lubridate')
 renv::install('mlr')
 renv::install('rvest')
 renv::install('rmarkdown')
+renv::install('janitor')
+renv::install('knitr')
+renv::install('dplyr')
+renv::install('ggplot2')
 renv::install('RSQLite')
 renv::install('RMySQL')
-renv::install('janitor')
+renv::install('tidyverse')
 
 
