@@ -23,7 +23,7 @@ Install cookiecutter to clone this project more conveniently.
 4. To activate virtual environment, go to R console:
 	- setwd (url that links to your project folder)
 	- open `.Rprofile` and run the line of command
-	- Rconsole will prompt -> `renv::restore()` then `y`. This command will allow the required packages and version in `renv.lock` to be installed.
+	- Rconsole will prompt -> `renv::restore()` then `y`, this command will allow the required packages and version in `renv.lock` to be installed
 	- (optional) go to `bin/vEnv.R`, click on "Source" at top right, to run all the suggested packages
 	
 
