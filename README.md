@@ -13,7 +13,7 @@ Install cookiecutter to clone this project more conveniently.
 	  - cookiecutter https://github.com/madelinelimm/myRenv.git
 	  - include 
 	  	- project name: <your_project_name>
-	  	- year: <year>
+	  	- year: <project_year>
 		- author: <author>
                 - remote: (this is optional)
 
