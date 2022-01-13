@@ -37,8 +37,7 @@ if(length(lock_file[[2]]) <= 1){
   renv::restore()
 }
 
-
-
+renv::snapshot()
 
 ##########################
 #######   Note   #########
