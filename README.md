@@ -1,0 +1,34 @@
+# myRenv
+This is a project that uses RENV package in R.
+
+# Installing
+Install cookiecutter to clone this project more conveniently
+[`pip3 install -U cookiecutter`]
+
+## Step by step guide to clone from R
+1. Create new repository on github and start a new project in R, connecting it remotely to your github repository
+
+2. Under R terminal run the following commands:
+	  i. cookiecutter https://github.com/madelinelimm/myRenv.git
+	  ii. include project name: <your_project_name>
+                year: <year>
+                author: <author>
+                remote: (this is optional)
+	  thereafter a folder(<your_project_name>) is created
+
+
+4. To activate virtual environment, go to R console:
+	- setwd (url that links to your project folder)
+	- open .Rprofile and run the line of command
+	- Rconsole will prompt -> renv::restore() >> y
+	- (optional) go to [`bin/vEnv.R`], click on "Source" at top right, to run all the suggested packages
+	
+	note that you might have to install.packages('renv') then library(renv) to able to use this project
+  
+
+5. To run the main file (<your_project_name>.R script) which is linked to the modules located in src,
+   open the renv.project.R script, setwd (url that links to src) then click on 'Source' at top right
+   
+
+# Author
+Madeline Lim (2021)
