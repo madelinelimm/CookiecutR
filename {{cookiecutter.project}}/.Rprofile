@@ -30,7 +30,7 @@ if(length(lock_file[[2]]) <= 1){
   renv::install('ggplot2')
   renv::install('RSQLite')
   renv::install('sqldf')
-  renv::install('RPostgre')
+  renv::install('RPostgres')
   renv::install('tidyverse')
   renv::install('survival')
 } else{
