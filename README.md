@@ -24,7 +24,7 @@ Install cookiecutter to clone this project more conveniently.
 	- setwd (url that links to your project folder)
 	- open `.Rprofile` and run the line of command
 	- Rconsole will prompt -> `renv::restore()` then `y`, this command will allow the required packages and version in `renv.lock` to be installed
-	- (optional) go to `bin/vEnv.R`, click on "Source" at top right, to run all the suggested packages, you may use `renv::install('<package_name>')` to install other packages that you need
+	- (optional) go to `bin/vEnv.R`, click on "Source" at top right, to run all the suggested packages, you may use `renv::install('<package_name>')` to install other packages required in your project
 	
 
 5. To run the main file `<your_project_name>.R` script which is linked to the modules located in src,
