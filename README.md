@@ -14,8 +14,8 @@ Install cookiecutter to clone this project more conveniently.
 	  - include 
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
-		- author: <author>
-                - remote: (this is optional)
+	  	- author: <project_author>
+	  	- remote: (this is optional)
 
 	  thereafter a folder `<your_project_name>` is created
 
