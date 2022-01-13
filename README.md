@@ -17,7 +17,7 @@ Install cookiecutter to clone this project more conveniently.
 	  	- author: <project_author>
 	  	- remote: (this is optional)
 
-	  thereafter a folder `<your_project_name>` is created
+	  thereafter a folder `<your_project_name>` will be created
 
 
 4. To activate virtual environment, go to R console:
