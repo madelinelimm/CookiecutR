@@ -10,7 +10,7 @@ Install cookiecutter to clone this project more conveniently.
 1. Create new repository on github and start a new project in R, connecting it remotely to your github repository
 
 2. Under R terminal run the following commands:
-	  - cookiecutter https://github.com/madelinelimm/myRenv.git
+	  - `cookiecutter https://github.com/madelinelimm/myRenv.git`
 	  - include 
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
