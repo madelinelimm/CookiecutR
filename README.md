@@ -13,23 +13,24 @@ Install cookiecutter to clone this project more conveniently.
 	  - cookiecutter https://github.com/madelinelimm/myRenv.git
 	  - include 
 	  	- project name: <your_project_name>
-                - year: <year>
-                - author: <author>
+	  	- year: <year>
+		- author: <author>
                 - remote: (this is optional)
+
 	  thereafter a folder(<your_project_name>) is created
 
 
 4. To activate virtual environment, go to R console:
 	- setwd (url that links to your project folder)
-	- open [`.Rprofile`] and run the line of command
-	- Rconsole will prompt -> [`renv::restore()`] >> y
-	- (optional) go to [`bin/vEnv.R`], click on "Source" at top right, to run all the suggested packages
+	- open `.Rprofile` and run the line of command
+	- Rconsole will prompt -> `renv::restore()` then `y`
+	- (optional) go to `bin/vEnv.R`, click on "Source" at top right, to run all the suggested packages
 	
-	note that you might have to install.packages('renv') then library(renv) to able to use this project
+	note that you might have to `install.packages('renv')` then `library(renv)` to able to use this project
   
 
-5. To run the main file [`<your_project_name>.R`] script which is linked to the modules located in src,
-   open the [`<your_project_name>.R`] script, setwd (url that links to src) then click on 'Source' at top right
+5. To run the main file `<your_project_name>.R` script which is linked to the modules located in src,
+   open the `<your_project_name>.R` script, setwd (url that links to src) then click on 'Source' at top right
    
 
 # Author
