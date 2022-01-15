@@ -1,9 +1,6 @@
 # click on "Source" button on the top right hand corner to run this script
 # to activate environment and install packages
 
-install.packages("startup")
-startup::install()
-try(startup::startup())
 
 # activate the environment
 source("renv/activate.R")
@@ -52,5 +49,4 @@ renv::snapshot()
 # it is currently set to all so all packages will enter lockfile, but might 
 # result in undesired packages entering lockfile. 
 
-startup::install()
-try(startup::startup())
+
