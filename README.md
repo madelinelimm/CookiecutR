@@ -23,7 +23,7 @@ Install cookiecutter to clone this project more conveniently.
 4. To activate virtual environment, go to R console:
 	- setwd (url that links to your project folder)
 	- open `.Rprofile` and run the line of command
-	- go to `bin/vEnv.R`, click on "Source" at top right, to run all the suggested packages. You could also add in packages or use the command `renv::install('<package_name>')` to install other packages required in your project
+	- go to `bin/vEnv.R`, click on 'Source'at top right, to run all the suggested packages. You could also add in packages or use the command `renv::install('<package_name>')` to install other packages required in your project
 
 	*Note: Upon completing the above steps, when you leave and re-enter this R project, run the `.Rprofile` again to activate your session. Moreover, if you're
 	using a new R project, which do not contain the `renv/library` folder, running the `.Rprofile` will prompt `renv::restore()` to re-install the packages that 
@@ -32,7 +32,7 @@ Install cookiecutter to clone this project more conveniently.
 
 5. To run the main file `<your_project_name>.R` script which is linked to the modules located in src, open the `<your_project_name>.R` script, setwd (url that links to src) then click on 'Source' at top right. 
 
-(If your Rstudio is the latest version, to aloow the entire results to be printed, you might have to click on Source>> Source as Local job...>> under 'Copy job result' choose 'To global environment' >> start)
+(If your Rstudio is the latest version, to aloow the entire results to be printed, you might have to click on 'Source'>> 'Source as Local job...'>> under 'Copy job result' choose 'To global environment' >> 'start')
 
 	
 # Additional notes
