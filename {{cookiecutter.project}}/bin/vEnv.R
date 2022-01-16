@@ -1,7 +1,7 @@
 ## Click on "Source" on top right of this script to run the entire script
-## Before runing this script, you might need to install 
-## rjson and dplyr using install.packages(<package_name>)
 
+install.packages('rjson')
+install.packages('dplyr')
 
 library(rjson)
 library(dplyr)
@@ -11,17 +11,18 @@ lock_file <-  fromJSON(file = 'renv.lock')
 packs <- dplyr::bind_rows(lock_file$Packages)
 
 
-lib_to_install <- c('blob', 'binom.test', 'boot', 'broom', 'caret', 'chisquare',
+lib_to_install <- c('blob', 'binom', 'boot', 'broom', 'caret', 'stats',
                     'class', 'collections', 'data.table', 'digest', 'dbplyr', 
                     'dplyr', 'esquisse', 'googledrive', 'googlesheets4', 
                     'ggplot2', 'janitor', 'knitr', 'lubridate', 'magrittr',
-                    'Mass', 'mlr', 'poisson', 'purr', 'readxl', 'rjson', 'rlang',
+                    'MASS', 'mlr', 'poisson', 'purrr', 'readxl', 'rjson', 'rlang',
                     'RPostgres', 'RSQLite', 'rvest', 'rmarkdown', 'sass', 'shiny',
                     'sqldf', 'stringi', 'stringr', 'survival', 'tibble', 'tidyr',
-                    'tidyverse', 'tidyselect', 'timeDate', 'vroom', 'weibull',
-                    'wilcoxon', 'xtable')
+                    'tidyverse', 'tidyselect', 'timeDate', 'vroom', 'WeibullR',
+                    'xtable')
 
-for (pkg in 1:length(lib_to_install)) {
+for (i in 1:length(lib_to_install)) {
+  pkg <- lib_to_install[i]
   if (!(pkg %in% packs$Package)){
     renv::install(pkg)
   }
