@@ -6,3 +6,5 @@
 {{cookiecutter.project}}.Rproj
 
 data/*
+
+Rplots.pdf
