@@ -13,6 +13,13 @@
         "description": "",
         "owner"      : ""
     },
+     {
+        "moduleName" : "module2a",
+        "path"       : "modules/module2a.R",
+        "execute"    : true,
+        "description": "",
+        "owner"      : ""
+    },
     	{
         "moduleName" : "module3",
         "path"       : "modules/newmodule/module3.R",
