@@ -1,3 +1,5 @@
+library(ggplot2)
+
 # created theme 
 
 theme_myRENV <- function(){
@@ -29,5 +31,6 @@ theme_myRENV <- function(){
     )
 }
 
+ggplot2::theme_set(theme_myRENV())
 
 
