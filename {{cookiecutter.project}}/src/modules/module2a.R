@@ -4,10 +4,6 @@ cat("\n========================================================\n")
 print('Entering Module 2a')
 cat("\n========================================================\n")
 
-library(ggplot2)
-
-source('src/theme_myRENV.R')
-
 
 ggplot(data = cars, aes(speed, dist))+
   geom_point() +
@@ -15,8 +11,7 @@ ggplot(data = cars, aes(speed, dist))+
 
 
 ggplot(mpg, aes(displ, hwy, colour = class))  + geom_point() +
-  ggtitle('Plot of highway miles vs engine displacement') +
-  theme_myRENV()
+  ggtitle('Plot of highway miles vs engine displacement') 
 
 
 cat("\n--------------------------------------------------------------\n")
