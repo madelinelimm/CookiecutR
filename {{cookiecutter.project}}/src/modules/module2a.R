@@ -11,8 +11,7 @@ source('src/theme_myRENV.R')
 
 ggplot(data = cars, aes(speed, dist))+
   geom_point() +
-  ggtitle('Plot of speed vs distance') +
-  theme_myRENV()
+  ggtitle('Plot of speed vs distance') 
 
 
 ggplot(mpg, aes(displ, hwy, colour = class))  + geom_point() +
