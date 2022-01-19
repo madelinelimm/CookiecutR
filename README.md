@@ -31,8 +31,8 @@ Install cookiecutter to clone this project more conveniently.
 
 5. To run the main file `<your_project_name>.R` script which is linked to the modules located in src, open the `<your_project_name>.R` script, setwd (url that links to src) then click on 'Source' at top right. 
 
-	*Note: If your Rstudio is the latest version, to aloow the entire results to be printed, you might have to click on 'Source'>> 'Source as Local job...'>>
-	under 'Copy job result' choose 'To global environment' >> 'start'
+	*Note: If your Rstudio is the latest version, to allow the entire results to be printed, you might have to click on 'Source'>> 'Source as Local job...'>>
+	under 'Copy job result' choose 'To global environment' >> 'start'. Plots will be saved as `Rplots.pdf` file.
 
 	
 # Additional notes
