@@ -5,7 +5,10 @@
 # activate the environment
 source("renv/activate.R")
 
+# install the packages
+source('bin/vEnv.R')
 
+# set ggplot theme
 source('src/theme_myRENV.R')
 
 
