@@ -28,10 +28,9 @@ Install cookiecutter to clone this project more conveniently.
 
 4. To activate virtual environment, go to R console:
 	- setwd (url that links to your project folder)
-	- open `.Rprofile` and run the first line of command `source('renv/activate.R')`
-	- go to `bin/vEnv.R`, click on 'Source'at top right, to run all the suggested packages. You could also add in packages or use the command `renv::install('<package_name>')` to install other packages required in your project
-	- go back to `.Rprofile` and run the second line of command `source('src/theme_myRENV.R')` to set the ggplot theme within the environment. Thereafter, any ggplots made within the environment will follow the theme in `theme_myRENV.R`
-
+	- open `.Rprofile`, at the top right corner of the script, click on 'Source'. This step activates environment, install required packages and set ggplot theme to the entire project
+	- You could also install additional packages with the command `renv::install('<package_name>')` then `renv::snapshot()` to capture the package name and version into the `lockfile`
+	
 	*Note: Upon completing the above steps, when you leave and re-enter this R project, run the command `source('renv/activate.R')` (found in `.Rprofile`)  to activate your session. Moreover, if you're using a new R project, which do not contain the `renv/library` folder, running the `.Rprofile` will prompt `renv::restore()` to re-install the packages that are in your lockfile and store the packages into `renv/library` folder.
 	
 
