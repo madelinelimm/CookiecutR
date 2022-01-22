@@ -28,7 +28,9 @@ Install cookiecutter to clone this project more conveniently.
 
 4. To activate virtual environment, go to R console:
 	- setwd (url that links to your project folder)
-	- open `.Rprofile` and run the first line of command `source('renv/activate.R')`
+	- open `.Rprofile`, at the top right corner of the script, click on <img width="32" alt="image" src="https://user-images.githubusercontent.com/71245661/150646019-32eaab36-4eaa-4c5d-9a11-c17f9d24119e.png">
+
+
 	- go to `bin/vEnv.R`, click on 'Source'at top right, to run all the suggested packages. You could also add in packages or use the command `renv::install('<package_name>')` to install other packages required in your project
 	- go back to `.Rprofile` and run the second line of command `source('src/theme_myRENV.R')` to set the ggplot theme within the environment. Thereafter, any ggplots made within the environment will follow the theme in `theme_myRENV.R`
 
