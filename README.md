@@ -6,7 +6,7 @@ Install cookiecutter to clone this project more conveniently.
 
 `pip3 install -U cookiecutter`
 
-# Step by step guide to clone from R
+# Step by step guide to clone using R
 1. Create new repository on github and start a new project in R
 
 2. Connect remote and local project:
