@@ -7,7 +7,13 @@ Install cookiecutter to clone this project more conveniently.
 `pip3 install -U cookiecutter`
 
 # Step by step guide to clone from R
-1. Create new repository on github and start a new project in R, connecting it remotely to your github repository
+1. Create new repository on github and start a new project in R
+2
+3. Connect remote and local project:
+	- go to build >> configure build tools >> Git/SVN >> Version control system >> Select Git
+	- run this command in R terminal: `git remote add origin git@github.com:<user>/<repo>.git`
+	- Under Git >> commit >> type message and click commit
+	- run this command in R terminal: `git push --set-upstream origin master`
 
 2. Under R terminal run the following commands:
 	  - `cookiecutter https://github.com/madelinelimm/myRenv.git`
