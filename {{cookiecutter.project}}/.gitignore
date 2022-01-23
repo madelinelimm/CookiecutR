@@ -3,7 +3,7 @@
 .RData
 .Ruserdata
 
-{{cookiecutter.project}}.Rproj
+#{{cookiecutter.project}}.Rproj
 
 data/*
 
