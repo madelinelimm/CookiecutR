@@ -3,7 +3,7 @@
 
 library(rjson)
 
-result <- fromJSON(file = '../config/modules.json')
+result <- fromJSON(file = 'config/modules.json')
 
 
 # This function imports the active modules from config/modules.json
@@ -28,7 +28,7 @@ main <- function(modules_json){
   mod_names <- mod_dict$keys()
   for (m in 1:length(mod_names)){
     path <- mod_dict$get(mod_names[[m]])
-    renv::run(path)
+    source(path)
   }
 }
 
