@@ -1,5 +1,6 @@
 ## Click on "Source" on top right of this script to run the entire script
-
+install.packages('rjson')
+install.packages('dplyr')
 
 library(rjson)
 library(dplyr, warn.conflicts = FALSE)
