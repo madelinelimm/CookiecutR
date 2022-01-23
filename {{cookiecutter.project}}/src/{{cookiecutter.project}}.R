@@ -23,8 +23,7 @@ ImportModule <- function(modules_json) {
 # This is the main function to run the modules
 
 main <- function(modules_json){
-  result_dict <- ImportModule(modules_json)
-  mod_dict <- result_dict
+  mod_dict <- ImportModule(modules_json)
   mod_names <- mod_dict$keys()
   for (m in 1:length(mod_names)){
     path <- mod_dict$get(mod_names[[m]])
