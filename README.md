@@ -34,7 +34,7 @@ Install cookiecutter to clone this project more conveniently.
 	*Note: Upon completing the above steps, when you leave and re-enter this R project, run the command `source('renv/activate.R')` (found in `.Rprofile`)  to activate your session. Moreover, if you're using a new R project, which do not contain the `renv/library` folder, running the `.Rprofile` will prompt `renv::restore()` to re-install the packages that are in your lockfile and store the packages into `renv/library` folder.
 	
 
-5. Run the main file. Open `<your_project_name>.R` script, then click on 'Source' at top right. 
+5. Run the main file. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
 
 	*Note: If your Rstudio is the latest version, to allow the entire results to be printed, you might have to click on 'Source'>> 'Source as Local job...'>>
 	under 'Copy job result' choose 'To global environment' >> 'start' (refer to figure below). Plots will be saved as `Rplots.pdf` file.
