@@ -6,8 +6,6 @@
 source("renv/activate.R")
 
 # install the packages
-# make sure you have installed rjson and dplyr
-# use install.packages('rjson') and install.packages('dplyr')
 source('bin/vEnv.R')
 
 # set ggplot theme
