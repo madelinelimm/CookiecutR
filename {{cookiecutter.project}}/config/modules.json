@@ -1,28 +1,28 @@
 [
 	{
         "moduleName" : "module1",
-        "path"       : "../src/modules/module1.R",
+        "path"       : "src/modules/module1.R",
         "execute"    : true,
         "description": "",
         "owner"      : ""
     },
     	{
         "moduleName" : "module2",
-        "path"       : "../src/modules/module2.R",
+        "path"       : "src/modules/module2.R",
         "execute"    : true,
         "description": "",
         "owner"      : ""
     },
      {
         "moduleName" : "module2a",
-        "path"       : "../src/modules/module2a.R",
+        "path"       : "src/modules/module2a.R",
         "execute"    : true,
         "description": "",
         "owner"      : ""
     },
     	{
         "moduleName" : "module3",
-        "path"       : "../src/modules/newmodule/module3.R",
+        "path"       : "src/modules/newmodule/module3.R",
         "execute"    : true,
         "description": "",
         "owner"      : ""
