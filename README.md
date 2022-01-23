@@ -18,7 +18,9 @@ Install cookiecutter to clone this project more conveniently.
 - src
 	- modules: folder consisting modules
 	- <project_name>.R: main Rscript to be executed
+- .Rprofile: automatically executes when project starts
 - renv.lock: similar to requirement.txt which stores installed packages names and its versions
+- <project name>.Rproj: file that starts the project in R (with Rstudio)
 
 
 
