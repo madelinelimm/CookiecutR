@@ -2,7 +2,7 @@
 
 
 library(rjson)
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 
 lock_file <-  fromJSON(file = 'renv.lock')
 
