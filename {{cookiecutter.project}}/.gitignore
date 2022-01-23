@@ -6,4 +6,4 @@
 #{{cookiecutter.project}}.Rproj
 
 data/*
-
+results/*
