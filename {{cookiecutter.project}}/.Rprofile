@@ -11,7 +11,7 @@ source("renv/activate.R")
 source('bin/vEnv.R')
 
 # set ggplot theme
-source('src/theme_myRENV.R')
+source('bin/theme_myRENV.R')
 
 
 
