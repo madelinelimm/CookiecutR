@@ -40,7 +40,7 @@ Install cookiecutter to clone this project more conveniently.
 	under 'Copy job result' choose 'To global environment' >> 'start' (refer to figure below). Plots will be saved as `Rplots.pdf` file.
 	<img width="151" alt="image" src="https://user-images.githubusercontent.com/71245661/150647159-026f5834-3ccb-4692-9a9c-28559daaecec.png">
 
-6. Configure modules to run by changing and adding modules path to `config/modules.json'. Set `execute : true` to run the module and false otherwise.
+6. Configure modules to run by changing and adding modules path to `config/modules.json`. Set  `execute : true` to run the module and false otherwise.
 
 	
 # Additional notes
