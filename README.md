@@ -6,6 +6,10 @@ Install cookiecutter to clone this project more conveniently.
 
 `pip3 install -U cookiecutter`
 
+or
+
+`brew install cookiecutter`
+
 # Introducing Structure of this project
 - bin
 	- vEnv.R: consist R packages to be installed
@@ -39,7 +43,7 @@ Install cookiecutter to clone this project more conveniently.
 	 
 3. Open the project - under the `<your_project_name>` folder, open the `<your_project_name>.Rproj`. This brings you to Rstudio.
 
-4. Once you open the Rproject, the `.Rprofile` will be automatically executed. This process might take awhile. The `.Rprofile` consist of codes to activate the environment, to install the packages and to set ggplot theme.
+4. Once you open the Rproject, the `.Rprofile` will be automatically executed, type `y` in Rconsole to allow the packages to be snapshot into the `renv.lock`. This process might take awhile. The `.Rprofile` consist of codes to activate the environment, to install the packages and to set ggplot theme.
 
 5. Connect remote and local project:
 	- go to build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git)
