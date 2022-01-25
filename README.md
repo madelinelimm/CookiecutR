@@ -46,7 +46,7 @@ or
 4. Once you open the Rproject, the `.Rprofile` will be automatically executed, type `y` in Rconsole to allow the packages to be snapshot into the `renv.lock`. This process might take awhile. The `.Rprofile` consist of codes to activate the environment, to install the packages and to set ggplot theme.
 
 5. Connect remote and local project:
-	- go to build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git)
+	- select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git)
 	- run this command in R terminal: `git remote add origin git@github.com:<user>/<repo>.git`
 	- Under Git >> commit >> type any message and click commit
 	- run this command in R terminal: `git push --set-upstream origin master`
@@ -59,7 +59,7 @@ or
 
 	
 # Additional notes
-- You might have to `install.packages('renv')` then `library(renv)` to able to use this project.
+- You do not have to `install.packages('renv')` in R, as renv is already available in R.
 - You could also install additional packages with the command `renv::install('<package_name>')` then `renv::snapshot()` to capture the package name and version into the `renv.lock` file.
 - The `.Rprofile` will be automatically executed everytime you enter this Rproject.
 - Commit your workings to github using Rstudio's version control, R terminal is typically not required after the initial commit.
