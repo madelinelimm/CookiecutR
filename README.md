@@ -1,5 +1,7 @@
 # myRenv
-This is a project that uses RENV package in R.
+myRenv project is created on R version 4.1.2 (2021-11-01) and RStudio 2021.09.2.
+This is a project that uses RENV package in R. 
+
 
 # Installing
 Install cookiecutter to clone this project more conveniently.
