@@ -17,7 +17,7 @@ lib_to_install <- c('blob', 'binom', 'boot', 'broom', 'caret', 'stats',
                     'MASS', 'mlr', 'poisson', 'purrr', 'readxl', 'rjson', 'rlang',
                     'RPostgres', 'RSQLite', 'rvest', 'rmarkdown', 'sass', 'shiny',
                     'sqldf', 'stringi', 'stringr', 'survival', 'tibble', 'tidyr',
-                    'tidyverse', 'tidyselect', 'timeDate', 'vroom', 'WeibullR',
+                    'tidyverse', 'tidyselect', 'timeDate', 'vroom', 'devtools',
                     'xtable')
 
 for (i in 1:length(lib_to_install)) {
