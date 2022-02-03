@@ -40,7 +40,6 @@ or
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
 	  	- author: <project_author>
-	  	- remote: (this is optional)
 
 	  thereafter a folder `<your_project_name>` will be created
 	 
