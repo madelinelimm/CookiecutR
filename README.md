@@ -40,7 +40,7 @@ or
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
 	  	- author: <project_author>
-		- remote:<ssh or http link to git repo>
+		- remote: insert ssh or http link to git repo
 
 	  thereafter a folder `<your_project_name>` will be created
 	 
