@@ -40,7 +40,7 @@ or
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
 	  	- author: <project_author>
-		- remote: <ssh or http link to git repo>
+		- remote:<ssh or http link to git repo>
 
 	  thereafter a folder `<your_project_name>` will be created
 	 
@@ -50,7 +50,7 @@ or
 
 5. Connect remote and local project:
 	- select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git), this process will restart Rstudio
-	- run the `FirstSetup.R` script which is linked to the `bin/MakeGit.sh`, and connects Rproject remotely to your git repo.
+	- run the `FirstSetup.R` script by clicking on 'Source' at top right. This is linked to the `bin/MakeGit.sh`, and connects Rproject remotely to your git repo.
 
 6. Run the main Rscript with are linked to the modules. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
 
