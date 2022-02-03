@@ -40,6 +40,7 @@ or
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
 	  	- author: <project_author>
+		- remote: <ssh or http link to git repo>
 
 	  thereafter a folder `<your_project_name>` will be created
 	 
@@ -48,10 +49,8 @@ or
 4. Once you open the Rproject, the `.Rprofile` will be automatically executed, type `y` in Rconsole to allow the packages to be snapshot into the `renv.lock`. This process might take awhile. The `.Rprofile` consist of codes to activate the environment, to install the packages and to set ggplot theme.
 
 5. Connect remote and local project:
-	- select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git)
-	- run this command in R terminal: `git remote add origin git@github.com:<user>/<repo>.git`
-	- Under Git >> commit >> type any message and click commit
-	- run this command in R terminal: `git push --set-upstream origin master`
+	- select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git), this process will restart Rstudio
+	- run the `FirstSetup.R` script which is linked to the `bin/MakeGit.sh`, and connects Rproject remotely to your git repo.
 
 6. Run the main Rscript with are linked to the modules. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
 
