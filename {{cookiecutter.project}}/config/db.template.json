@@ -1,7 +1,13 @@
 {
+  
     "defaultDB" : null,
-    "<dbName>":{
-        "connection" : 
-            "host='<HOST>' user='<USER>' dbname='<DATABASE>' password='<PASSWORD>'"
+    "cdm":{
+        "connection" :{
+          "dbname":"<DATABASE>", 
+          "host":"<HOST>", 
+          "port":"<PORT>", 
+          "password":"<PASSWORD>", 
+          "user":"<USER>"
+        }
     }
 }
