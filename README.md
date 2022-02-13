@@ -23,7 +23,7 @@ or
 - renv: consist folders which stores project packages in the environment
 - results: consist of Rplots
 - src
-	- modules: folder consisting modules
+	- modules: folder consisting modules, module4.R is a sample code to connect to postgreSQL database
 	- <project_name>.R: main Rscript to be executed
 - .Rprofile: automatically executes when project starts
 - renv.lock: similar to requirement.txt which stores installed packages names and its versions
@@ -54,7 +54,7 @@ or
 
 6. Run the main Rscript with are linked to the modules. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
 
-7. You can decide on modules to run in the main Rscript `<your_project_name>.R`, by changing and adding modules path in`config/modules.json`. Set  `execute : true` to run the module and false otherwise.
+7. You can decide on modules to run in the main Rscript `<your_project_name>.R`, by changing and adding modules path in`config/modules.json`. Set  `execute : true` to run the module and false otherwise. Note that module4.R is a sample module to connect to postgreSQL database, you may change your database details in `config/db.template.json` before running the module.
 
 
 
