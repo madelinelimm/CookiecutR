@@ -18,9 +18,10 @@ connect <- dbConnect(RPostgres::Postgres(),
                  password = dbcon$password,
                  user = dbcon$user)
 
-table <- (dbGetQuery(connect,
-           "SELECT * FROM testing_schema.accounts"))
-
-print(table)
+# sample query
+# table <- (dbGetQuery(connect,
+#           "SELECT * FROM testing_schema.accounts"))
+# 
+# print(table)
 
 cat("\n--------------------------------------------------------------\n")
