@@ -26,6 +26,13 @@
         "execute"    : true,
         "description": "",
         "owner"      : ""
+    },
+      {
+        "moduleName" : "module4",
+        "path"       : "src/modules/module4.R",
+        "execute"    : false,
+        "description": "",
+        "owner"      : ""
     }
 ]	
 
