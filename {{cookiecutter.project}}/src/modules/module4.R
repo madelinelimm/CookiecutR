@@ -4,24 +4,12 @@ cat("\n========================================================\n")
 print('Entering Module 4')
 cat("\n========================================================\n")
 
-library(RPostgres)
-library(DBI)
-library(rjson)
+#import function getAllData to run query from database
+source('src/lib/databaseIO/pgIO.R')
 
-db<- fromJSON(file = 'config/db.template.json')
-dbcon <- db$cdm$connection
 
-connect <- dbConnect(RPostgres::Postgres(),
-                 dbname = dbcon$dbname,
-                 host = dbcon$host,
-                 port = dbcon$port,
-                 password = dbcon$password,
-                 user = dbcon$user)
+table <- getAllData(query = "SELECT * FROM testing_schema.accounts")
 
-# sample query
-# table <- (dbGetQuery(connect,
-#           "SELECT * FROM testing_schema.accounts"))
-# 
-# print(table)
+print(table)
 
 cat("\n--------------------------------------------------------------\n")
