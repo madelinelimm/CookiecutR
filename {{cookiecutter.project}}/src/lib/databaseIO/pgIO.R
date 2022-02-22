@@ -39,6 +39,7 @@ connectToDB <- function(query, dbname = NULL){
 # if dbname is stated, then it will be the database used for this query
 # else the dbname in db.template.json will be used
 # outputs table 
+
 getAllData <- function(query, dbname = NULL){
 
   tryCatch(connectToDB(query, dbname),
@@ -49,7 +50,14 @@ getAllData <- function(query, dbname = NULL){
               else{
                 return(connectToDB(query))
               }
-  )
+          )
 }
+
+
+# getAllData <- function(query, dbname = NULL){
+#   return(connectToDB(query))
+# }
+# 
+
 
 
