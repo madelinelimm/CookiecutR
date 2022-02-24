@@ -42,22 +42,25 @@ connectToDB <- function(query, dbname = NULL){
 
 getAllData <- function(query, dbname = NULL){
 
-  tryCatch(connectToDB(query, dbname),
-            error = function(e)
-              if (length(e) > 0){
-                print(e)
-              }
-              else{
-                return(connectToDB(query))
-              }
-          )
+  tryCatch(
+    expr = {
+      res <- connectToDB(query, dbname)
+      return(res)
+    },
+    error = function(e){
+      message(e)
+      return('Error in SimpleTestFunction, please try again!')
+    },
+    warning = function(w){
+      message(w)
+      return('Warning in SimpleTestFunction, please try again!')
+    },
+    finally = {
+      message(' ')
+    }
+  )
 }
 
-
-# getAllData <- function(query, dbname = NULL){
-#   return(connectToDB(query))
-# }
-# 
 
 
 
