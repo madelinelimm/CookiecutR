@@ -36,35 +36,11 @@ SimpleTestFunction <- function(a1, b1){
 }
 
 
-print(SimpleTestFunction(1, 2))
-print('lame')
-print(SimpleTestFunction(1, '1'))
-print('lame again')
-print(SimpleTestFunction(1, a))
-print(SimpleTestFunction(c(1,3,4), c(1,2)))
-print('lame one more time')
-
-# log_calculator <- function(x){
-#   tryCatch(
-#     expr = {
-#       message(log(x))
-#       message("Successfully executed the log(x) call.")
-#     },
-#     error = function(e){
-#       message('Caught an error!')
-#       #print(e)
-#     },
-#     warning = function(w){
-#       message('Caught an warning!')
-#       print(w)
-#     },
-#     finally = {
-#       message('All done, quitting.')
-#     }
-#   )
-# }
-# 
-# 
-# print('lame')
-# log_calculator(-10)
-# print('lame again')
+# could uncomment and test by clicking on "Source"
+# print(SimpleTestFunction(1, 2))
+# print('testing..')
+# print(SimpleTestFunction(1, '1'))
+# print('testing again...')
+# print(SimpleTestFunction(1, a))
+# print(SimpleTestFunction(c(1,3,4), c(1,2)))
+# print('testing once more')
