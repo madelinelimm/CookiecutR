@@ -11,5 +11,6 @@ source('src/lib/databaseIO/pgIO.R')
 table <- getAllData(query = "SELECT * FROM testing_schema.accounts")
 
 print(table)
+print('We are getting out of this module')
 
 cat("\n--------------------------------------------------------------\n")
