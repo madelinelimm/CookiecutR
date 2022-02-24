@@ -49,11 +49,11 @@ getAllData <- function(query, dbname = NULL){
     },
     error = function(e){
       message(e)
-      return('Error in SimpleTestFunction, please try again!')
+      return('Error in getAllData, please try again!')
     },
     warning = function(w){
       message(w)
-      return('Warning in SimpleTestFunction, please try again!')
+      return('Warning in getAllData, please try again!')
     },
     finally = {
       message(' ')
