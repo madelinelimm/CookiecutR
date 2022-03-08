@@ -56,7 +56,7 @@ or
 
 6. Run the main Rscript with are linked to the modules. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
 
-7. You can decide on modules to run in the main Rscript `<your_project_name>.R`, by changing and adding modules path in `config/modules.json`. Set  `execute : true` in `config/modules.json` to run the module and false otherwise. Note that module4.R is a sample module to connect to postgreSQL database, using the getAllData function from `src/lib/databaseIO/pgIO.R`. You may change your database details in `config/db.template.json` before running the module.
+7. You can decide on modules to run in the main Rscript `<your_project_name>.R`, by changing and adding modules path in `config/modules.json`. Set  `execute : true` in `config/modules.json` to run the module and false otherwise. Note that module4.R is a sample module to connect to postgreSQL database and execute queries, using the getAllData and commitData functions from `src/lib/databaseIO/pgIO.R`. You may change your database details in `config/db.template.json` before running the module.
 
 8. You could also create scripts to test the functions created in `src/lib` folder. A sample test script `test/testthat/test_simpleLib.R`, which tests the SimpleTestFunction in `src/lib/testLib/simpleLib.R`, has been created for reference. Click on the 'Run Tests' button at the top right corner to run the test, and the results of the test would be shown ('Test complete' indicates successful testing).
 
