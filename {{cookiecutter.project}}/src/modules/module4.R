@@ -8,7 +8,7 @@ cat("\n========================================================\n")
 source('src/lib/databaseIO/pgIO.R')
 
 commitData(query = "DROP TABLE IF EXISTS Pizzas CASCADE;")
-commitData(query = "CREATE TABLE IF NOT EXISTS Pizzas(pizza TEXT PRIMARY KEY, price INTEGER);")
+commitData(query = "CREATE TABLE Pizzas(pizza TEXT PRIMARY KEY, price INTEGER);")
 commitData(query = "INSERT INTO Pizzas VALUES ('Diavola', '12')")
 commitData(query = "INSERT INTO Pizzas VALUES ('Hawaiian', '18')")
 commitData(query = "INSERT INTO Pizzas VALUES ('Seafood', '20')")
