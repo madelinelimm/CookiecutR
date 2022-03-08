@@ -4,13 +4,20 @@ cat("\n========================================================\n")
 print('Entering Module 4')
 cat("\n========================================================\n")
 
-#import function getAllData to run query from database
+#import function getAllData and commitData to run query from database
 source('src/lib/databaseIO/pgIO.R')
 
+commitData(query = "DROP TABLE IF EXISTS Pizzas CASCADE;")
+commitData(query = "CREATE TABLE IF NOT EXISTS Pizzas(pizza TEXT PRIMARY KEY, price INTEGER);")
+commitData(query = "INSERT INTO Pizzas VALUES ('Diavola', '12')")
+commitData(query = "INSERT INTO Pizzas VALUES ('Hawaiian', '18')")
+commitData(query = "INSERT INTO Pizzas VALUES ('Seafood', '20')")
+pizza_table <- getAllData(query = "SELECT * FROM Pizzas")
 
-table <- getAllData(query = "SELECT * FROM testing_schema.accounts")
+print(pizza_table)
 
-print(table)
+cat("\n \n")
+
 print('We are getting out of this module')
-
 cat("\n--------------------------------------------------------------\n")
+
