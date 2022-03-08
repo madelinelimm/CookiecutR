@@ -6,4 +6,8 @@
     # Generate the master branch
     # ......................................
     git push --set-upstream origin master
+    # Generate the rest of the branches
+    # ......................................
+    git checkout -b dev
+    git push origin dev
 
