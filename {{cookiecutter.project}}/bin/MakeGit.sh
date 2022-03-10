@@ -10,4 +10,4 @@
     # ......................................
     git checkout -b dev
     git push origin dev
-
+    git push --set-upstream origin dev
