@@ -36,7 +36,7 @@ SimpleTestFunction <- function(a1, b1){
 }
 
 
-# could uncomment and test by clicking on "Source"
+##could uncomment and test by clicking on "Source"
 # print(SimpleTestFunction(1, 2))
 # print('testing..')
 # print(SimpleTestFunction(1, '1'))
