@@ -19,7 +19,6 @@ or
 	- theme_myRENV.R: sets the ggplot theme in the project
 - config
 	- modules.json: consist modules path and decides on whether to execute a module
-- data 
 - renv: consist folders which stores project packages in the environment
 - results: consist of Rplots
 - src
