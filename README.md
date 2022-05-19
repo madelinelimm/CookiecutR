@@ -1,5 +1,5 @@
 # CookiecutR
-myRenv project is created on R version 4.1.2 (2021-11-01) and RStudio 2021.09.2.
+CookiecutR project is created on R version 4.1.2 (2021-11-01) and RStudio 2021.09.2.
 
 This is a project that uses RENV package in R and runs on a virtual environment. 
 
@@ -37,7 +37,7 @@ or
 1. Create new repository on github.
 
 2. Clone the project - Open command prompt with the directory you would like to save the cloned file and run the following commands:
-	  - `cookiecutter https://github.com/madelinelimm/myRenv.git`
+	  - `cookiecutter https://github.com/madelinelimm/CookiecutR.git`
 	  - include 
 	  	- project name: <your_project_name>
 	  	- year: <project_year>
