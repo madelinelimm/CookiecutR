@@ -15,12 +15,14 @@ or
 
 # Introducing Structure of this project
 - bin
+	- makeGit.R: git commands to connect remotely to github at the start of the project
 	- vEnv.R: consist R packages to be installed
 	- theme_myRENV.R: sets the ggplot theme in the project
 - config
+	- db.template.json: to include your personal database details
 	- modules.json: consist modules path and decides on whether to execute a module
 - data
-- renv: consist folders which stores project packages in the environment
+- renv: consist script to activate the environment and folders which stores project packages in the environment
 - results: consist of Rplots
 - src
 	- modules: folder consisting modules, module4.R is a sample code to connect to postgreSQL database
@@ -28,13 +30,13 @@ or
 	- <project_name>.R: main Rscript to be executed
 - .Rprofile: automatically executes when project starts
 - renv.lock: similar to requirement.txt which stores installed packages names and its versions
-- <project name>.Rproj: file that starts the project in R (with Rstudio)
+- <project name>.Rproj: file that starts the project in R (within Rstudio)
 - tests: consist folder to test functions
 
 
 
 # Step by step guide to clone using R
-1. Create new repository on github.
+1. Create a new repository on github.
 
 2. Clone the project - Open command prompt with the directory you would like to save the cloned file and run the following commands:
 	  - `cookiecutter https://github.com/madelinelimm/CookiecutR.git`
@@ -51,7 +53,7 @@ or
 4. Once you open the Rproject, the `.Rprofile` will be automatically executed, type `y` in Rconsole to allow the packages to be snapshot into the `renv.lock`. This process might take awhile. The `.Rprofile` consist of codes to activate the environment, to install the packages and to set ggplot theme.
 
 5. Connect remote and local project:
-	- select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git), this process will restart Rstudio
+	- enable version control on Rstudio. select build >> configure build tools >> Git/SVN >> Version control system >> Select Git (To initialise this project with Git), this process will restart Rstudio
 	- run the `FirstSetup.R` script by clicking on 'Source' at top right. This is linked to the `bin/MakeGit.sh`, and connects Rproject remotely to your git repo.
 
 6. Run the main Rscript with are linked to the modules. Open `<your_project_name>.R` script found in the src folder, then click on 'Source' at top right. 
